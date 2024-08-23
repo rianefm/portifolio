@@ -1,0 +1,186 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: #242424;
+    font-family: sans-serif;
+    word-wrap: break-word; /*quebra o texto */
+    overflow-wrap: break-word; /*quebra o texto */
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: 900;
+    color: #DDA19B;
+    text-shadow: 1px 1px 2px #5D3A45;
+}
+
+/* primeiras sections do portifolio */
+.wrapper{
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+nav{
+    display: flex;
+    justify-content: right;
+    padding-top: 0;
+    gap: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(244, 221, 220);
+    text-shadow: 1px 1px 2px  rgb(128, 128, 128); 
+    position: absolute;
+    top: 20px; 
+    right: 20px; 
+   
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1rem;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #ff7e5f;
+}
+
+nav a:hover{
+    color: #DDA19B;
+    cursor: pointer;
+
+}
+
+
+main{
+    display: block;
+    background-color: #ffff;
+}
+
+.container{
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section.module p {
+    margin-bottom: 40px;
+    font-size: large;
+    color: #5A5A5A;
+    text-shadow: 1px 1px 2px #707070;
+}
+
+section.module:last-child{
+    margin-bottom: 0;
+}
+
+section.module h2{
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+
+section.module.content{
+    padding: 40px 0;
+    background: #F4DDDC;
+    width: 110%;
+    height: 350px;
+}
+
+section.module.content img{
+    width: 40%;
+    height: 40%;
+    border-radius: 100%;
+    float: left;
+    margin-left: -30%;
+    padding-right: 40px;
+
+}
+
+section.module.parallax{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh !important;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* esse que dá o efeito parallax para a imagem */
+    background-size: cover; 
+    -webkit-backgound-size: cover; /*para pegar nos outros navegadores */
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+
+section.module.parallax::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: linear-gradient(to bottom, rgba(235, 196, 196, 0) 0,rgba(236, 188, 188, 0) 40%, #270e1c 100%);
+}
+
+section.module.parallax{
+    background-image: url(../imgs/cereja.jpg);
+   
+}
+
+section.module.parallax h1{
+    color: #F4DDDC;
+    text-align: center;
+    font-size: 78px;
+    z-index: 50;
+    text-transform: uppercase;
+}
+
+/*aqui acaba as primeiras sections do portifolio */
+
+section.module.content2{
+    padding: 40px 0;
+    background: #e8eef5;
+}
+
+.skills-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills-section {
+    width: 45%;
+    
+}
+
+.skills-section h3 {
+    color: #DDA19B; 
+    text-shadow: 1px 1px 2px #5D3A45;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.skills-section ul {
+    padding-left: 20px;
+}
+
+.skills-section li {
+    margin-bottom: 5px;
+    font-size: 18px;
+    list-style-type: none;
+}
+
+
+section.module.content3{
+    padding: 40px 0;
+    background: #F4DDDC;
+}
+
+
