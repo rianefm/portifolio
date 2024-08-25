@@ -59,7 +59,6 @@ main{
 }
 
 .container{
-    width: 100%;
     max-width: 760px;
     margin: 0 auto;
     padding: 0 20px;
@@ -70,6 +69,9 @@ section.module p {
     font-size: large;
     color: #5A5A5A;
     text-shadow: 1px 1px 2px #707070;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
 }
 
 section.module:last-child{
@@ -93,7 +95,7 @@ section.module.content img{
     height: 40%;
     border-radius: 100%;
     float: left;
-    margin-left: -30%;
+    margin-left: 10%;
     padding-right: 40px;
 
 }
@@ -259,5 +261,44 @@ footer {
     color: #ddd;
 }
 
-
 /*aqui termina o footer */
+
+
+/* resposividade */
+
+
+@media (max-width: 768px) {
+    section.module.parallax h1 {
+        font-size: 60px; /* Tamanho para tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    section.module.parallax h1 {
+        font-size: 40px; /* Tamanho para celulares */
+    }
+
+    nav ul{
+     gap: 5px;  
+       
+    }
+
+    nav li{
+        font-size: 5px;
+    }
+
+    section.module.content img {
+        width: 20%;
+        height: 10%;
+        border-radius: 100%;
+        float: left; 
+        margin-left: 10%; 
+        
+    }
+    
+    section.module p {
+        padding-top: 6px;
+        text-align: justify;
+        font-size: 15px;
+    }
+}
