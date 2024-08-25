@@ -13,8 +13,8 @@ h1,h2,h3,h4,h5,h6{
     text-shadow: 1px 1px 2px #5D3A45;
 }
 
-/* primeiras sections do portifolio */
-.wrapper{
+/* header do portifolio */
+header{
     width: 100%;
     margin: 0 auto;
 }
@@ -27,11 +27,11 @@ nav{
     gap: 20px;
     font-size: 20px;
     font-weight: bold;
-    color: rgb(244, 221, 220);
     text-shadow: 1px 1px 2px  rgb(128, 128, 128); 
     position: absolute;
     top: 20px; 
     right: 20px; 
+    z-index: 100;
    
 }
 
@@ -43,21 +43,15 @@ nav ul {
 
 nav ul li a {
     text-decoration: none;
-    color: #ffffff;
-    font-size: 1rem;
+    font-size: 1.2rem;
     transition: color 0.3s ease-in-out;
+    color: #F4DDDC;
 }
 
 nav ul li a:hover {
-    color: #ff7e5f;
-}
-
-nav a:hover{
     color: #DDA19B;
     cursor: pointer;
-
 }
-
 
 main{
     display: block;
@@ -90,7 +84,7 @@ section.module h2{
 section.module.content{
     padding: 40px 0;
     background: #F4DDDC;
-    width: 110%;
+    
     height: 350px;
 }
 
@@ -143,7 +137,33 @@ section.module.parallax h1{
     text-transform: uppercase;
 }
 
-/*aqui acaba as primeiras sections do portifolio */
+/*aqui acaba o header do  portifolio */
+
+/*setinha de volta ao header */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #DDA19B;
+    color: white;
+    padding: 15px;
+    border-radius: 50%; 
+    text-align: center;
+    text-decoration: none;
+    font-size: 24px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+}
+
+.back-to-top:hover {
+    background-color: #F4DDDC;
+    cursor: pointer;
+}
+
+/*aqui termina a setinha */
+
+
+/*aqui começa a seção 2 */
 
 section.module.content2{
     padding: 40px 0;
@@ -157,6 +177,8 @@ section.module.content2{
 
 .skills-section {
     width: 45%;
+    color:#5A5A5A;
+    text-shadow: 1px 1px 2px #707070;
     
 }
 
@@ -177,10 +199,65 @@ section.module.content2{
     list-style-type: none;
 }
 
+/* aqui termina a seção 2*/
+
+
+/*aqui começa a seção 3 */
 
 section.module.content3{
     padding: 40px 0;
     background: #F4DDDC;
 }
 
+.module.content3 img{
+    width: 100%;
+    height: 180px;
+}
 
+
+.module.content3 ul li{
+    list-style-type: none;
+    color: #5A5A5A;
+    text-shadow: 1px 1px 2px #707070;
+}
+
+
+.module.content3 ul{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5%;
+    gap: 10%;
+
+}
+
+/*aqui termina a seção 3 */
+
+/*aqui começa o footer */
+footer {
+    background-color: #DDA19B;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-info {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.contact-info li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.contact-info li a:hover {
+    color: #ddd;
+}
+
+
+/*aqui termina o footer */
